@@ -1,0 +1,2 @@
+C:\Dev\git\cardGame\Card-Game\CardGame\CardGame\bin\Debug\CardGame.exe.config
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\bin\Debug\CardGame.exe.config
