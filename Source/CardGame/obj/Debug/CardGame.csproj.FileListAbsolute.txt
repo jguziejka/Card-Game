@@ -1,2 +1,9 @@
 C:\Dev\git\cardGame\Card-Game\CardGame\CardGame\bin\Debug\CardGame.exe.config
 C:\Dev\git\cardGame\Card-Game\Source\CardGame\bin\Debug\CardGame.exe.config
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\bin\Debug\CardGame.exe
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\bin\Debug\CardGame.pdb
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\bin\Debug\CardGame.Common.dll
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\bin\Debug\CardGame.Common.pdb
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\obj\Debug\CardGame.csprojResolveAssemblyReference.cache
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\obj\Debug\CardGame.exe
+C:\Dev\git\cardGame\Card-Game\Source\CardGame\obj\Debug\CardGame.pdb

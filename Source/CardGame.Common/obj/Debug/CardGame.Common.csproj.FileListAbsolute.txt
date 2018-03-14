@@ -1,0 +1,5 @@
+C:\Dev\git\cardGame\Card-Game\Source\CardGame.Common\bin\Debug\CardGame.Common.dll
+C:\Dev\git\cardGame\Card-Game\Source\CardGame.Common\bin\Debug\CardGame.Common.pdb
+C:\Dev\git\cardGame\Card-Game\Source\CardGame.Common\obj\Debug\CardGame.Common.csprojResolveAssemblyReference.cache
+C:\Dev\git\cardGame\Card-Game\Source\CardGame.Common\obj\Debug\CardGame.Common.dll
+C:\Dev\git\cardGame\Card-Game\Source\CardGame.Common\obj\Debug\CardGame.Common.pdb
