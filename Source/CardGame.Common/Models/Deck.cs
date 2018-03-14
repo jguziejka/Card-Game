@@ -2,14 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardGame.Common.Models
 {
-    public class Deck : IShuffleable
+    public class Deck : IShuffleable, IDealable
     {
         public const int VALID_DECK_COUNT = 52;
+        
+        public int Count { get { return _cards.Count(); } }
 
         private List<Card> _cards { get; set; }
 
@@ -31,29 +31,35 @@ namespace CardGame.Common.Models
                     };
                     _cards.Add(card);
                 }
-            }            
+            }
         }
 
         public void Shuffle()
         {
-            // first we split the deck
-            var leftHand = _cards.Take(26);
-            var rightHand = _cards.Skip(26).Take(26);
-            if (leftHand.Count() != 26 || rightHand.Count() != 26)
+            // i prefer to shuffle my cards twice 
+            for (int i = 0; i < 2; i++)
             {
-                return; // nope
+                RandomSequenceShuffle();
             }
         }
-
-        public int Count()
+        
+        public IEnumerable<Card> GetDealableCards(int count)
         {
-            return _cards.Count();
+            return _cards.Take(count);
         }
 
-
-        private void RiffleShuffle()
+        private void RandomSequenceShuffle()
         {
-
+            var cards = _cards.ToArray();
+            var random = new Random();
+            for (int i = VALID_DECK_COUNT - 1; i > 0; --i)
+            {
+                var tempCard = cards[i];
+                var randomIndex = random.Next(i + 1);
+                cards[i] = cards[randomIndex];
+                cards[randomIndex] = tempCard;
+            }
+            _cards = cards.ToList();
         }
 
     }

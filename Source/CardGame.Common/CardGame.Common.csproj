@@ -41,12 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\EnumHelper.cs" />
+    <Compile Include="Infrastructure\IDealable.cs" />
+    <Compile Include="Infrastructure\IDealtable.cs" />
+    <Compile Include="Infrastructure\IPlayable.cs" />
     <Compile Include="Infrastructure\IShuffleable.cs" />
     <Compile Include="Infrastructure\ISortable.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Deck.cs" />
     <Compile Include="Models\FaceValues.cs" />
     <Compile Include="Models\Hand.cs" />
+    <Compile Include="Models\Players.cs" />
     <Compile Include="Models\Suits.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

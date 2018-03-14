@@ -1,24 +1,40 @@
 ﻿using CardGame.Common.Infrastructure;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CardGame.Common.Models
 {
-    public class Hand : ISortable
+    public class Hand : IDealtable, ISortable
     {
-        public List<Card> DealtHand { get; set; }
+        public List<Card> DealtHand { get; private set; }
+
+        public Hand()
+        {
+            DealtHand = new List<Card>();
+        }
+
+        public void AddCardToHand(Card card)
+        {
+            DealtHand.Add(card);
+        }
 
         public void SortHand()
         {
-            throw new NotImplementedException();
+            DealtHand = DealtHand.OrderBy(x => (int)x.FaceValue).ToList();
         }
 
-        public string ToHandString()
+        public override string ToString()
         {
-            throw new NotImplementedException();
+            var sb = new StringBuilder();
+            foreach (var card in DealtHand)
+            {
+                sb.Append(card.ToString());
+                sb.Append("-");
+            }
+            sb.Remove(sb.Length - 1, 1);
+            return sb.ToString();
         }
+
     }
 }
